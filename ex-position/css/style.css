@@ -1,0 +1,116 @@
+body {
+  background: #f7f7f7;
+  font-family: Arial;
+  margin: auto;
+  max-width: 1000px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  max-width: 100%;
+  margin: 40px auto;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  place-content: center;
+}
+
+.item {
+  background: #ffffff;
+  padding: 10px 20px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.produto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 80px;
+}
+.line {
+  position: absolute;
+  top: 250px;
+  margin: 0 435px;
+  height: 2px;
+  width: 50px;
+  background: #ee2211;
+}
+.descricao {
+  background: #ffffff;
+  max-height: 300px;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.titulo-descricao {
+  padding: 10px 10px 0 0;
+}
+
+.texto-descricao {
+  font-size: 14px;
+  padding: 0 10px 10px 10px;
+}
+
+.foto-bicicleta {
+  max-width: 300px;
+}
+
+.botao {
+  background: #ee2211;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.texto-vantagens {
+  font-size: 64px;
+  text-align: right;
+  padding-right: 24px;
+  color: #c6c6c6;
+}
+
+.vantagens-descricao {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 300px;
+}
+
+.titulo-vantagens-descricao {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.texto-vantagens-descricao {
+  font-size: 14px;
+  margin-left: 55px;
+  width: 70%;
+}
+
+.eletrica::before {
+  content: url("../img/eletrica.svg");
+  padding-right: 10px;
+}
+
+.velocidade::before {
+  content: url("../img/velocidade.svg");
+  padding-right: 10px;
+}
+
+.rastreador::before {
+  content: url("../img/rastreador.svg");
+  padding-right: 10px;
+}

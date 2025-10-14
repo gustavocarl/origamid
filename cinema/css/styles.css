@@ -1,0 +1,23 @@
+html {
+  font-family: Arial;
+}
+
+.hoje {
+  color: darkred;
+}
+
+.amanha {
+  color: darkblue;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-titulo {
+  color: seagreen;
+}
+
+p {
+  font-size: 20px;
+}

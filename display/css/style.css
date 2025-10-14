@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.texto-numero {
+  color: #febe01;
+}
+
+.botao-cor {
+  padding: 0.5rem;
+  border: none;
+  background: #febe01;
+  margin: 1rem;
+}
+
+.subtitulo-cor {
+  color: #eeeeee;
+  margin: 1rem;
+}
+
+.texto-botao {
+  color: #332200;
+}
+
+.titulo-cor {
+  color: #111;
+  text-align: center;
+}
+
+.fundo-cor {
+  background: #111;
+  border-radius: 4px;
+  margin: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.texto-cor {
+  color: #b2b2b2;
+  margin: 0 1rem 0;
+}
