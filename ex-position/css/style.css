@@ -89,9 +89,17 @@ p {
 }
 
 .titulo-vantagens-descricao {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   margin-left: 20px;
   margin-bottom: 0;
+}
+
+.titulo-vantagens-descricao::before {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
 }
 
 .texto-vantagens-descricao {
@@ -102,15 +110,22 @@ p {
 
 .eletrica::before {
   content: url("../img/eletrica.svg");
-  padding-right: 10px;
 }
 
 .velocidade::before {
   content: url("../img/velocidade.svg");
-  padding-right: 10px;
 }
 
 .rastreador::before {
   content: url("../img/rastreador.svg");
-  padding-right: 10px;
+}
+
+.footer {
+  background: #ffffff;
+}
+
+.footer-title {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
 }
