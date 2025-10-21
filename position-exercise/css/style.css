@@ -37,6 +37,7 @@ p {
   padding: 10px 20px;
   color: #222222;
   text-decoration: none;
+  border: 2px solid #fff;
 }
 
 .item:hover {
@@ -47,13 +48,10 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 80px;
-}
-
-.line {
   position: relative;
 }
 
-.line::after {
+.produto::before {
   content: "";
   display: block;
   width: 60px;
@@ -61,7 +59,7 @@ p {
   background: #e21;
   position: absolute;
   top: 10px;
-  left: 470px;
+  left: 46%;
 }
 
 .descricao {
