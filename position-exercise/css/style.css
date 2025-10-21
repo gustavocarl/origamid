@@ -1,12 +1,18 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #f7f7f7;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   margin: auto;
-  max-width: 1000px;
+  width: 1000px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .flex {
@@ -16,13 +22,14 @@ p {
 
 .logo {
   max-width: 100%;
-  margin: 40px auto;
+  margin: 2.5rem auto;
 }
 
 .menu {
   display: flex;
   gap: 20px;
   place-content: center;
+  list-style: none;
 }
 
 .item {
@@ -32,21 +39,31 @@ p {
   text-decoration: none;
 }
 
+.item:hover {
+  border: 2px solid #e21;
+}
+
 .produto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 80px;
 }
+
 .line {
-  display: inline-block;
-  position: absolute;
-  top: 250px;
-  right: 0;
-  margin: 0 470px;
-  height: 2px;
-  width: 50px;
-  background: #ee2211;
+  position: relative;
 }
+
+.line::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: absolute;
+  top: 10px;
+  left: 470px;
+}
+
 .descricao {
   background: #ffffff;
   max-height: 300px;
@@ -55,31 +72,48 @@ p {
 }
 
 .titulo-descricao {
-  padding: 10px 10px 0 0;
+  font-size: 2rem;
+  padding: 0px 10px;
 }
 
 .texto-descricao {
-  font-size: 14px;
-  padding: 0 10px 10px 10px;
-}
-
-.foto-bicicleta {
-  max-width: 300px;
+  font-size: 1rem;
+  padding: 10px 10px;
+  line-height: 1.5rem;
 }
 
 .botao {
+  display: inline-block;
   background: #ee2211;
   color: #ffffff;
   text-decoration: none;
-  padding: 8px;
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
+  margin-top: 10px;
   margin-right: 10px;
 }
 
+.botao:hover {
+  background: #821;
+}
+
+.foto {
+  max-width: 400px;
+}
+
+.foto-bicicleta {
+  max-width: 400px;
+}
+
+.vantagens {
+  background: url("../img/onda.svg") repeat center top / contain;
+}
+
 .texto-vantagens {
-  font-size: 64px;
+  font-size: 4rem;
   text-align: right;
-  padding-right: 24px;
+  line-height: 1.5;
+  padding: 1.75rem;
   color: #c6c6c6;
 }
 
@@ -87,26 +121,50 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  width: 300px;
+  max-width: 400px;
 }
 
 .titulo-vantagens-descricao {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 1.5rem;
   margin-left: 20px;
   margin-bottom: 0;
 }
 
+.article-vantagens {
+  margin: 1rem;
+}
+
+.article-vantagens:first-child {
+  margin: 1rem 1rem 0 1rem;
+}
+
+.article-vantagens:nth-child(even) {
+  margin: 0 1rem;
+}
+
+.article-vantagens:last-child {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.article-vantagens:nth-child(odd) {
+  background: #c6c6c6;
+}
+
+.article-vantagens:hover {
+  border-left: 4px solid #e21;
+}
+
 .titulo-vantagens-descricao::before {
   display: inline-block;
-  vertical-align: middle;
   padding-right: 10px;
+  margin: 0;
 }
 
 .texto-vantagens-descricao {
-  font-size: 14px;
-  margin-left: 55px;
+  font-size: 0.875rem;
+  margin-left: 50px;
   width: 70%;
 }
 
